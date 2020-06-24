@@ -12,3 +12,6 @@ build:
 
 run:
 	docker run -it -p ${PORT}:${PORT} ${REPOSITORY}/${PROJECT}:$(BRANCH)
+
+push:
+	docker push ${REPOSITORY}/${PROJECT}:$(BRANCH)
